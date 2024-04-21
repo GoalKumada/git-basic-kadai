@@ -1,0 +1,4 @@
+goal2@DESKTOP-I4N517B MINGW64 ~/Test/git_challenge (main)
+$ git log --oneline
+b3c57a8 (HEAD -> main) 日本語訳を追加
+7fec7fb 一回目のコミット
