@@ -1,3 +1,55 @@
+goal2@DESKTOP-I4N517B MINGW64 ~/Test/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/goal2/Test/git_challenge/.git/
+
+goal2@DESKTOP-I4N517B MINGW64 ~/Test/git_challenge (main)
+$ git add hello_world.txt
+
+goal2@DESKTOP-I4N517B MINGW64 ~/Test/git_challenge (main)
+$ git commit -m "一回目のコミット"
+[main (root-commit) 7fec7fb] 一回目のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+goal2@DESKTOP-I4N517B MINGW64 ~/Test/git_challenge (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+goal2@DESKTOP-I4N517B MINGW64 ~/Test/git_challenge (main)
+$ git diff hello_world.txt
+diff --git a/hello_world.txt b/hello_world.txt
+index 5dd01c1..42ae6b0 100644
+--- a/hello_world.txt
++++ b/hello_world.txt
+@@ -1 +1,2 @@
+-Hello, world!
+\ No newline at end of file
++Hello, world!
++こんにちは、世界！
+\ No newline at end of file
+
+goal2@DESKTOP-I4N517B MINGW64 ~/Test/git_challenge (main)
+$ git add hello_world.txt
+
+goal2@DESKTOP-I4N517B MINGW64 ~/Test/git_challenge (main)
+$ git diff --staged
+diff --git a/hello_world.txt b/hello_world.txt
+index 5dd01c1..42ae6b0 100644
+--- a/hello_world.txt
++++ b/hello_world.txt
+@@ -1 +1,2 @@
+-Hello, world!
+\ No newline at end of file
++Hello, world!
++こんにちは、世界！
+\ No newline at end of file
+
+goal2@DESKTOP-I4N517B MINGW64 ~/Test/git_challenge (main)
+$ git commit -m "日本語訳を追加"
+[main b3c57a8] 日本語訳を追加
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
 goal2@DESKTOP-I4N517B MINGW64 ~/Test/git_challenge (main)
 $ git log --oneline
 b3c57a8 (HEAD -> main) 日本語訳を追加
